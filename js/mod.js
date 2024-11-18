@@ -5,7 +5,7 @@ let modInfo = {
 	pointsName: "points",
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new ExpantaNum (10), // Used for hard resets and new players
+	initialStartPoints: EN(10), // Used for hard resets and new players
 	
 	offlineLimit: 1,  // In hours
 }
@@ -39,9 +39,9 @@ function canGenPoints(){
 // Calculate points/sec!
 function getPointGen() {
 	if(!canGenPoints())
-		return new ExpantaNum(0)
+		return EN(0)
 
-	let gain = new ExpantaNum(1)
+	let gain = EN(1)
 	return gain
 }
 
